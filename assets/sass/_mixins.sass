@@ -1,0 +1,30 @@
+@mixin md
+  @media screen and (min-width: 768px)
+    @content
+@mixin bg-color($bg-color)
+  background: $bg-color
+  color: text-color($bg-color)
+@mixin ribbon($mt,$mb)
+  h1
+    margin-top: $mt
+    margin-bottom: $mb
+    position: relative
+    color: white
+    @content
+    &::after
+      content: ''
+      position: absolute
+      top: -20%
+      left: 50%
+      transform: translateX(-50%)
+      width: 391px
+      height: 120px
+      background: url('../../lib/images/ribbon.png')no-repeat
+      background-size: cover
+      z-index: -1
+      padding: 33px 101px
+      box-sizing: border-box
+@mixin shadow-bottom
+  box-shadow: inset 0 -20px 50px -40px rgba(0,0,0,1)
+@mixin border-dashed
+  border: 5px dashed $primary-color

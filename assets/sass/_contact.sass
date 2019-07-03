@@ -1,0 +1,18 @@
+.contact
+  background: url('../../lib/images/contact.jpg')no-repeat center
+  background-size: cover
+  @include shadow-bottom
+  @include ribbon(0,5rem)
+    z-index: 1
+    top: 40px 
+  .row
+    form
+      input, textarea
+        border: 1px solid $primary-color
+        &:focus
+          box-shadow: 0 0 10px 1px $primary-color
+      button
+        @include bg-color($primary-color)
+        border: none
+        border-radius: 5px
+        font-weight: bold

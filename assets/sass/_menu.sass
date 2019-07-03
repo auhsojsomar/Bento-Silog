@@ -1,0 +1,15 @@
+.menu
+  overflow: hidden
+  #menu
+    color: $light-color
+    background: rgba(0,0,0,0.5)
+  .menu-1
+    @extend #menu
+  .menu-2
+    @include bg-color($light-color)
+    @include shadow-bottom
+    img
+      border-color: $primary-color
+      background: $primary-color
+  .menu-3
+    @extend #menu

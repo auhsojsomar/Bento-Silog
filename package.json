@@ -1,0 +1,32 @@
+{
+  "name": "bento-silog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd assets && sass --watch sass:css"
+  },
+  "keywords": [],
+  "author": "Joshua Ramos",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "jquery-parallax.js": "^1.5.0",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.15.0",
+    "wow.js": "^1.2.2"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auhsojsomar/Bento-Silog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/auhsojsomar/Bento-Silog/issues"
+  },
+  "homepage": "https://github.com/auhsojsomar/Bento-Silog#readme",
+  "description": ""
+}

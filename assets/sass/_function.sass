@@ -1,0 +1,5 @@
+@function text-color($bg-color)
+  @if(lightness($bg-color) > 70)
+    @return $dark-color
+  @else
+    @return $light-color

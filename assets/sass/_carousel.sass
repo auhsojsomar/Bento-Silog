@@ -1,0 +1,26 @@
+.carousel
+  ul
+    margin-bottom: .5rem
+    @include md
+      margin-bottom: 1rem
+    li
+      width: calc(5px + 2vh)
+      height: calc(5px + 2vh)
+      border-radius: 50%
+      border: 3px solid $light-color
+      margin: 0 5px
+      background: none
+      opacity: 1
+      &.active
+        background: $light-color
+  .carousel-caption
+    h1
+      font-size: calc(.8rem + 3vw)
+      color: $primary-color
+      margin-bottom: 0
+      @include md
+        width: 80%
+        margin: 0 auto 2rem
+    p
+      font-size: calc(.5rem + 1vw)
+      margin-bottom: 0

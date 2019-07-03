@@ -1,0 +1,35 @@
+footer
+  @include bg-color($primary-color)
+  .row div:nth-child(3)
+    a
+      font-size: 2.5rem
+      margin-right: 10px
+  h2
+    font-size: 2rem
+    font-weight: bold
+    margin-bottom: .5rem
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      width: 5px
+      background: $light-color
+      height: 80%
+      left: -15px
+      top: 55%
+      transform: translateY(-50%)
+  ul
+    color: darken($light-color, 20%)
+    font-weight: 500
+  a
+    color: darken($light-color, 20%)
+    &:hover
+      text-decoration: none
+      color: lighten($light-color,30%) !important
+  .copyright
+    padding: 5px
+    background: darken($primary-color,30%)
+    p
+      margin: 0
+    a
+      color: text-color(darken($primary-color,30%))

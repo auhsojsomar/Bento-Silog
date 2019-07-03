@@ -1,0 +1,48 @@
+.nav-top
+  background: $primary-color
+  ul
+    p
+      display: inline
+      margin-right: 15px
+    i
+      font-size: 1.2rem
+      margin-right: 7px
+    a
+      color: $light-color
+      &:hover
+        color: darken($light-color, 20%) !important
+        text-decoration: none
+      i
+        margin: 0 5px
+.navbar
+  background: $light-color
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.7)
+  z-index: 1
+  padding: 0 1rem
+  .navbar-collapse
+    transition: height .7s ease
+    li
+      cursor: pointer
+      a
+        font-weight: bold
+        position: relative
+        &:hover::before
+          transform: translateX(-50%) scaleX(1)
+        &.active
+          color: $primary-color !important
+          &::before
+            transform: translateX(-50%) scaleX(1)
+      a::before
+       content: ''
+       position: absolute
+       width: 90%
+       height: 3px
+       background: $primary-color
+       left: 50%
+       bottom: 0
+       transform: translateX(-50%) scaleX(0)
+       transform-origin: center
+       transition: transform .3s ease-out
+       @include md
+        bottom: -21px
+

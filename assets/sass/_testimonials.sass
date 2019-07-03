@@ -1,0 +1,32 @@
+.testimonials
+  @include bg-color($light-color)
+  @include shadow-bottom
+  .row
+    [class ^= col]
+      position: relative
+      p
+        @include bg-color($primary-color)
+        flex-basis: 32%
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)
+        position: relative
+        padding: 6rem 2rem 12rem
+        margin-bottom: 7rem
+        border-radius: 15px 15px 0 0
+      ul
+        position: absolute
+        z-index: 1
+        left: 50%
+        bottom: -3%
+        transform: translateX(-50%)
+        padding: 0
+      span
+        position: absolute
+        top: -7%
+        left: 50%
+        transform: translateX(-50%)
+        display: block
+        height: fit-content
+        font-size: 10rem
+        font-family: system
+      img
+        border: 2px solid black

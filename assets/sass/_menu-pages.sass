@@ -1,0 +1,57 @@
+.menu-pages
+  @include ribbon(3rem,5rem)
+  position: relative
+  .owl-stage-outer
+    z-index: 1
+    padding-bottom: 1rem
+  .owl-nav
+    position: absolute
+    top: 20%
+    left: -2.3rem
+    right: -2.3rem
+    display: flex
+    justify-content: space-between
+    margin: 0 !important
+    & button:hover,button:focus
+      background: none !important
+      color: inherit !important
+      outline: none
+  .owl-dots
+    & button:focus
+      outline: none 
+  %menu
+    @include border-dashed
+    padding: 3rem 3rem 1.5rem
+    position: relative
+    margin-bottom: 5rem
+    h2
+      position: absolute
+      top: -1.5rem
+      left: 2rem
+      background: $light-color
+      padding: 0 2rem
+  #main-dishes
+    @extend %menu
+  #desserts
+    @extend %menu
+  #beverages
+    @extend %menu
+  .menu-pages-body
+    .menu-card
+      cursor: pointer
+      display: flex
+      flex-direction: column
+      transition: box-shadow .4s ease
+      border-radius: 5px
+      border: 1px solid darken($light-color,50%)
+      &:hover
+        box-shadow: 0 0 .8rem rgba(0,0,0,0.4)
+      img
+        width: 100%
+      p
+        color: $primary-color
+        font-size: 1.2rem
+        padding-bottom: 1rem !important
+      h5,p
+        padding: .7rem .7rem 0 .7rem
+        margin: 0
